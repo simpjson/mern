@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add styles for the red and blue classes */
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1_id">This is h1</h1>
+    <button id="red_id">Red</button>
+    <button id="blue_id">Blue</button>
+    <script>
+        // Fixing the event listener syntax and function definitions
+        document.querySelector('#red_id').addEventListener("click", chgRed); // Use '#' to select by ID
+        document.querySelector('#blue_id').addEventListener("click", chgBlue); // Use '#' to select by ID
+
+        function chgRed() {
+            document.querySelector("#h1_id").classList.add('red'); // Use add() to add a class
+        }
+
+        function chgBlue() {
+            document.querySelector("#h1_id").classList.add('blue'); // Use add() to add a class
+        }
+    </script>
+</body>
+</html>          
